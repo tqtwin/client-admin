@@ -1,0 +1,86 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .logo-image {
+    height: 50px;
+  }
+
+  .search-bar {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;  // Bỏ viền mặc định khi nhấn vào input
+
+    &:focus {
+      border-color: transparent;  // Bỏ đường viền khi nhấn vào ô tìm kiếm
+    }
+  }
+
+  .search-button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+  .hotline {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+
+    span {
+      margin-left: 10px;  // Khoảng cách giữa icon điện thoại và số hotline
+    }
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+
+    span {
+      margin-left: 5px;
+    }
+  }

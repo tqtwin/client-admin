@@ -1,0 +1,82 @@
+.status-filter {
+  display: flex;
+  justify-content: space-between; /* Chia đều khoảng cách giữa menu và thanh tìm kiếm */
+  align-items: center; /* Căn giữa các thành phần theo chiều dọc */
+  margin-bottom: 20px;
+}
+
+.status-menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.status-item {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.status-item.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.status-item:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+  .status-item.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+
+  .status-item:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+/* Giới hạn chiều rộng nhưng vẫn hiển thị đầy đủ thông tin khi hover */
+.order-id, .user-id {
+    max-width: 100px; /* Giới hạn chiều rộng tối đa */
+    white-space: nowrap; /* Ngăn không cho text xuống dòng */
+    overflow: hidden; /* Ẩn phần vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị ba chấm '...' nếu phần vượt quá */
+  }
+
+  .order-id[title], .user-id[title] {
+    text-decoration: underline; /* Thêm gạch dưới khi hover để người dùng biết có thể xem thêm */
+    cursor: pointer; /* Thêm con trỏ khi hover để gợi ý cho người dùng */
+  }
+.product{
+    max-width: 200px; /* Giới hạn chiều rộng tối đa */
+    white-space: nowrap; /* Ngăn không cho text xuống dòng */
+    overflow: hidden; /* Ẩn phần vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị ba chấm '...' nếu phần vượt quá */
+  }

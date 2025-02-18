@@ -1,0 +1,78 @@
+.reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+  }
+
+  .reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .review-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .review-header h4 {
+    margin: 0;
+    color: #555;
+  }
+
+  .review-header span {
+    font-size: 0.9em;
+    color: #999;
+  }
+
+  .review-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .btn-lock,
+  .btn-reply {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-lock {
+    background: #e74c3c;
+    color: white;
+  }
+
+  .btn-reply {
+    background: #3498db;
+    color: white;
+  }
+
+  .btn-lock:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
